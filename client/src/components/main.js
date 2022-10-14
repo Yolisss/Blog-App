@@ -17,16 +17,18 @@ const AllBlogs = () => {
   }, []);
 
   return (
+    // big return statement for the component
     <>
-      <div className="title">
-        <header> Welcome All </header>
-        <br></br>
-        {/* <input
-          type="text"
-          placeholder="Search..."
-          className="search"
-          onChange={(e) => setSearchTerm(e.target.value)} */}
-        {/* /> */}
+      <div>
+        {blogs.map((blog, index) => {
+          // loops through students to grab every student
+          return (
+            // return to get data out of the anonymous function; big arrow means function
+            <p key={index}>
+              {blog.title} {blog.images} {blog.paragraph} {blog.likes}
+            </p>
+          );
+        })}
       </div>
     </>
   );
