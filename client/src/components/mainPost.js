@@ -1,6 +1,7 @@
 import { useState, useReducer, useEffect } from "react";
 // import { useReducer } from "react";
 import SocialCard from "./SocialCard";
+import Form from "./Form";
 
 const AllBlogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -46,6 +47,7 @@ const AllBlogs = () => {
           // loops through students to grab every student
           return (
             <SocialCard blogData={blog} key={index} />
+
             // return to get data out of the anonymous function; big arrow means function
             // <p key={index}>
             //   {blog.title} {blog.images} {blog.paragraph} {blog.likes}
@@ -53,6 +55,7 @@ const AllBlogs = () => {
           );
         })}
       </div>
+      <Form />
     </>
   );
 };

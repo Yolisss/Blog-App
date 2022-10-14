@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url("https://cdn.winknews.com/wp-content/uploads/2020/06/Disney-Halloween-3-1068x711.jpg");
+  background-color: goldenrod;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -38,7 +38,8 @@
 }
 
 .card_image img {
-  border-radius: 50%;
+  border-radius: 10%;
+  width: 100%;
 }
 
 .App {
