@@ -1,12 +1,14 @@
 .App {
   text-align: center;
-  background-color: goldenrod;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("https://wallpapercave.com/wp/wp9873173.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .title {
-  color: black;
+  color: lightgreen;
 }
 
 /* //controls the text inside the card */
@@ -17,7 +19,7 @@
   box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   cursor: pointer;
-  color: black;
+  color: white;
 }
 
 .card:hover {
@@ -28,7 +30,7 @@
 .card_title {
   font-weight: 800;
   font-size: 1.5rem;
-  color: aqua;
+  color: lightgreen;
 }
 
 .card_image {
