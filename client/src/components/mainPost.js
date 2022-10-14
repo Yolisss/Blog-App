@@ -37,11 +37,18 @@ const AllBlogs = () => {
       <div className="title">
         <h1>Tis the Season to be Spooky!</h1>
       </div>
+      <div className="dir-buttons">
+        <button className="button1">Plan Your Next Trip</button>{" "}
+        <button className="button2">Deals</button>{" "}
+        <button className="button3">Discounts</button>
+      </div>
+      <br></br>
       <input
         className="search-bar"
         placeholder="Search.."
         onInput={filterCards}
       />
+
       <div className="cards-container">
         {blogs.map((blog, index) => {
           // loops through students to grab every student

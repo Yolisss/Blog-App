@@ -59,5 +59,21 @@
   border: 1px solid grey;
   font-size: 1rem;
   padding: 1rem;
-  boder: 0.5rem;
+  border: 0.5rem;
+}
+
+.button1 {
+  background-color: thistle;
+}
+.button2 {
+  background-color: thistle;
+}
+.button3 {
+  background-color: thistle;
+}
+
+.search-bar {
+  background-color: black;
+  border-color: black;
+  color: white;
 }
