@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import AllBlogs from "./components/main";
+import AllBlogs from "./components/mainPost";
 
 function App() {
   return (
