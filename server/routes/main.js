@@ -34,12 +34,24 @@ router.post("/main", async (req, res) => {
     //object destructure
     const { title, images, paragraph, likes } = req.body;
     let main = await db.any(
-      "INSERT INTO intro_blog (title, images, paragraph, likes) VALUES($1,$2,$3,$4)",
-      [title, images, paragraph, likes]
+      "INSERT INTO intro_blog (title, images, paragraph) VALUES($1,$2,$3)",
+      [title, images, paragraph]
     );
     res.status(201).json({ message: "post added" });
   } catch (e) {
     res.status(500).json({ message: "internal server error" });
+  }
+});
+
+router.delete("/:id", async (req, res) => {
+  //if you find id within the function, delete it
+  const blogsId = req.params.id;
+  try {
+    await db.none("DELETE FROM intro_blog WHERE id=$1", [blogsId]);
+    res.send({ status: "sucess" });
+  } catch (e) {
+    //if you don't have it, bring back an error
+    return res.status(500).json({ e });
   }
 });
 
