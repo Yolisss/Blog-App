@@ -1,0 +1,79 @@
+.App {
+  text-align: center;
+  background-image: url("https://wallpapercave.com/wp/wp9873173.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.title {
+  color: lightgreen;
+}
+
+/* //controls the text inside the card */
+.card {
+  margin: 2rem 2rem 2rem 0;
+  padding: 1.5rem;
+  width: 250px;
+  box-shadow: 0 0 28px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  color: thistle;
+}
+
+.card_title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: lightgreen;
+}
+
+.card_image {
+  display: flex;
+  justify-content: flex-end;
+  color: blueviolet;
+}
+
+.card_image img {
+  border-radius: 10%;
+  width: 100%;
+}
+
+.App {
+  padding: 4rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  outline: none;
+  width: 100%;
+  border: 1px solid grey;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 0.5rem;
+}
+
+.button1 {
+  background-color: thistle;
+}
+.button2 {
+  background-color: thistle;
+}
+.button3 {
+  background-color: thistle;
+}
+
+.search-bar {
+  background-color: black;
+  border-color: black;
+  color: white;
+}
